@@ -1,23 +1,37 @@
 "use sctrict";
 
-console.log(`arr` + " - object");
+if (1) {
+    console.log("Ok!");
+} else {
+    console.log("Error");
+}
 
-console.log(4 +  +"5");
+// const num = 50;
 
-let incr = 10,
-    decr = 10;
+// if (num < 49) {
+//     console.log("Error");
+// } else if ( num > 100) {
+//     console.log("Too much");
+// } else {
+//     console.log("Ok");
+// }
 
-// incr++;
-// decr--;
 
-console.log(++incr);
-console.log(--decr);
+// (num === 50) ? console.log("Ok") : console.log("Error");
 
-console.log(5%2);
+const num = '50';
 
-console.log(2 + 2 * 2 !== "6");
-
-const isChecked = false,
-      isClose = false;
-
-console.log(isChecked || !isClose);
+switch (num) {
+    case '49':
+        console.log("Incorrect");
+        break;
+    case '100':
+        console.log("Incorrect");
+        break;
+    case '50':
+        console.log("Correct");
+        break;
+    default:
+        console.log("Not this time");
+        break;
+}
