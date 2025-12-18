@@ -23,24 +23,25 @@
 
 'use strict';
 
-const numberOfFilms = +prompt('How much movies did you watched?', '');
+// 1 task
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
 
+// 2 task
 const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+    "count": numberOfFilms,
+    "movies": {},
+    "actors": {},
+    "genres": [],
+    "privat": false,
 };
 
-const a = prompt('One of last watched movies?', ''),
-      b =  prompt('Rate it', ''), 
-      c =  prompt('One of last watched movies?', ''),
-      d =  prompt('Rate it', '');
+const filmOne = prompt("Один из последних просмотренных фильмов?"),
+    filmOneScore = prompt("На сколько оцените его?"),
+    filmTwo = prompt("Один из последних просмотренных фильмов?"),
+    filmTwoScore = prompt("На сколько оцените его?");
 
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+personalMovieDB.movies[filmOne] = filmOneScore;
+personalMovieDB.movies[filmTwo] = filmTwoScore;
 
 console.log(personalMovieDB);
