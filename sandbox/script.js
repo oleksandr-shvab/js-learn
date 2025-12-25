@@ -1,15 +1,15 @@
 "use strict";
 
-let number = 5;
-const leftBorderWidth = 1;
+let hamburger;
+const fries = NaN;
+const cola = 0;
+const nuggets = 2;
 
-number = 10;
-console.log(number);
+console.log(fries === 3 && nuggets);
 
-const obj = {
-    a: 50
-};
 
-obj.a = 10;
+if (hamburger && cola || fries === 3 && nuggets) {
+    console.log('Done!')
+}
 
-console.log(obj);
+
