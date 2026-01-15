@@ -39,7 +39,8 @@ sortStudentsByGroups(students)  =>
 То есть, меняется содержимое строки. Все оставшиеся ученики попадают туда.*/
 
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Alex'];
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Alex'];
+const students = ['Peter', 'Andrew', 'Ann'];
 
 function sortStudentsByGroups(arr) {
     arr.sort();
@@ -53,11 +54,10 @@ function sortStudentsByGroups(arr) {
             result.push(group);
             group = [];
 
-        } else if (arr.length === 0) {
-            break;
         } else {
             result.push(`Оставшиеся студенты: ${arr.length === 0 ? '-' : arr.join(', ')}`);
             arr = [];
+            break;
         }
 
     }
